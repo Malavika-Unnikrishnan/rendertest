@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Pic of {{ username }}</title>
+  </head>
+  <body>
+    <h1>Profile Pic of {{ username }}</h1>
+    <img src="{{ url_for('static', filename='imgs/instagram_profile_pictures/' + username + '.jpg') }}" alt="Profile Picture">
+    <p><a href="/">Go back</a></p>
+  </body>
+</html>
